@@ -17,6 +17,7 @@ def add_bg_from_url(image_url):
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
+            opacity: 0.6;
         }}
         </style>
         """,
