@@ -82,4 +82,25 @@ streamlit run app.py
 
 
 
+## 🛠️ Tech Stack
+
+**Frontend & UI:**
+- 🧩 **Streamlit** – For building the interactive web UI
+- 🎨 **Custom CSS** – Injected via `st.markdown()` for background images and styling
+
+**Backend & Logic:**
+- 🐍 **Python 3** – Core programming language
+- 📤 **Groq API** – Connects to the LLaMA 3 model for ultra-fast text summarization
+- 🧠 **LLaMA 3 (70B)** – Large language model used via Groq for summarization
+
+**Web Scraping & Input Processing:**
+- 🌐 **requests** – For fetching article content from URLs
+- 🥣 **BeautifulSoup (bs4)** – For parsing and extracting readable text from HTML
+
+**Configuration & Deployment:**
+- 🔐 **python-dotenv** – To load the Groq API key securely from a `.env` file (local dev)
+- ☁️ **Streamlit Cloud** – For deploying the app online with secret management
+
+
+---
 
