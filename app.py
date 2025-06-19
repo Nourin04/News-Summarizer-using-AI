@@ -22,7 +22,7 @@ def add_bg_from_url(image_url):
         """,
         unsafe_allow_html=True
     )
-add_bg_from_url("https://images.unsplash.com/photo-1523995462485-3d171b5c8fa9?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")  # or any image URL
+add_bg_from_url("https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")  # or any image URL
 
 
 def extract_article_from_url(url):
