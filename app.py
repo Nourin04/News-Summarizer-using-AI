@@ -2,6 +2,8 @@ import streamlit as st
 import requests
 from bs4 import BeautifulSoup
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Load Groq API key from environment
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
