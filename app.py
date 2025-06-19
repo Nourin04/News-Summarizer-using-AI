@@ -13,16 +13,25 @@ def add_bg_from_url(image_url):
         f"""
         <style>
         .stApp {{
-            background-image: url("{image_url}");
+            background: url("{image_url}") no-repeat center center fixed;
             background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            opacity: 0.6;
+            position: relative;
+        }}
+        .stApp::before {{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.6);  /* transparent white layer */
+            z-index: -1;
         }}
         </style>
         """,
         unsafe_allow_html=True
     )
+
 add_bg_from_url("https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")  # or any image URL
 
 
